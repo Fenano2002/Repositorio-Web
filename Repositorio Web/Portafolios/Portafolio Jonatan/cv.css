@@ -1,0 +1,253 @@
+:root {
+    --ink: #18202a;
+    --muted: #637083;
+    --line: #dfe5ec;
+    --soft: #f6f8fb;
+    --white: #ffffff;
+    --accent: #25636f;
+    --accent-soft: #e4f1f3;
+    --shadow: 0 18px 48px rgba(24, 32, 42, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--soft);
+}
+
+a {
+    color: inherit;
+}
+
+.cv-page {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 32px 0;
+}
+
+.cv-sheet {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.cv-hero {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 28px;
+    padding: 44px;
+    border-bottom: 1px solid var(--line);
+}
+
+.cv-photo {
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 24px;
+    border: 1px solid var(--line);
+    margin-bottom: 22px;
+}
+
+.cv-kicker,
+.cv-label {
+    margin: 0;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.cv-hero h1 {
+    margin: 10px 0 14px;
+    max-width: 12ch;
+    font-size: clamp(2.35rem, 7vw, 5rem);
+    line-height: 0.96;
+    letter-spacing: 0;
+}
+
+.cv-role {
+    margin: 0;
+    max-width: 62ch;
+    color: var(--muted);
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.cv-contact {
+    align-self: start;
+    display: grid;
+    gap: 12px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--soft);
+}
+
+.cv-contact a,
+.cv-contact span {
+    overflow-wrap: anywhere;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 650;
+}
+
+.cv-contact a:hover {
+    color: var(--accent);
+}
+
+.cv-body {
+    display: grid;
+    grid-template-columns: 0.88fr 1.12fr;
+    gap: 32px;
+    padding: 36px 44px 44px;
+}
+
+.cv-column,
+.cv-section,
+.cv-card {
+    display: grid;
+}
+
+.cv-column {
+    align-content: start;
+    gap: 24px;
+}
+
+.cv-section {
+    gap: 14px;
+}
+
+.cv-section h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+.cv-section p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.cv-card {
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--white);
+}
+
+.cv-card strong {
+    font-size: 1rem;
+}
+
+.cv-card span {
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+.cv-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cv-tags span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 7px 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 750;
+}
+
+.cv-list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cv-list li {
+    display: grid;
+    gap: 4px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+}
+
+.cv-list span {
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+.cv-print {
+    display: inline-flex;
+    justify-self: start;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--ink);
+    color: var(--white);
+    cursor: pointer;
+    font: inherit;
+    font-weight: 750;
+}
+
+.cv-print:hover {
+    background: var(--accent);
+}
+
+@media (max-width: 840px) {
+    .cv-page {
+        width: min(100% - 24px, 1120px);
+        padding: 12px 0;
+    }
+
+    .cv-hero,
+    .cv-body {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+
+    .cv-hero h1 {
+        max-width: 10ch;
+    }
+}
+
+@media print {
+    body {
+        background: var(--white);
+    }
+
+    .cv-page {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cv-sheet {
+        border: 0;
+        box-shadow: none;
+    }
+
+    .cv-print {
+        display: none;
+    }
+}

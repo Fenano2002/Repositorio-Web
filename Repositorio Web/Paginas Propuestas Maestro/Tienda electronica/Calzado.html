@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calzado | Aura Sports</title>
+    <link rel="stylesheet" href="style-calzado.css">
+    <link rel="shortcut icon" href="Logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">AURA SPORTS</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calzado.html" class="active">Calzado</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+            </ul>
+        </nav>
+        <div class="cart">🛒 (0)</div>
+    </header>
+
+    <main class="category-container">
+        <aside class="sidebar">
+            <h3>Filtros</h3>
+            
+            <div class="filter-group">
+                <h4>Categoría</h4>
+                <label><input type="checkbox"> Running</label>
+                <label><input type="checkbox"> Training</label>
+                <label><input type="checkbox"> Basketball</label>
+                <label><input type="checkbox"> Lifestyle</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Talla (MX)</h4>
+                <div class="size-grid">
+                    <button>25</button><button>26</button>
+                    <button>27</button><button>28</button>
+                    <button>29</button><button>30</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Precio</h4>
+                <input type="range" min="500" max="5000">
+                <p>Hasta $5,000</p>
+            </div>
+        </aside>
+
+        <section class="products-display">
+            <header class="display-header">
+                <h2>Calzado Deportivo</h2>
+                <select name="sort">
+                    <option value="new">Más recientes</option>
+                    <option value="price-low">Precio: Menor a Mayor</option>
+                </select>
+            </header>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Calzado/tenis-running-pro.html">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600" alt="Aura Speed 2.0">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Running</span>
+                        <h3>Aura Speed 2.0</h3>
+                        <p class="price">$2,899.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Calzado/impact-pro-grey.html">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=600" alt="Impact Pro Grey">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Training</span>
+                        <h3>Impact Pro Grey</h3>
+                        <p class="price">$1,750.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Calzado/sky-jump-high.html">
+                            <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?q=80&w=600" alt="Sky Jump High">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Basketball</span>
+                        <h3>Sky Jump High</h3>
+                        <p class="price">$3,200.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Calzado/street-minimal-white.html">
+                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600" alt="Street Minimal White">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Lifestyle</span>
+                        <h3>Street Minimal White</h3>
+                        <p class="price">$1,499.00</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aura Sports. Diseño Minimalista.</p>
+    </footer>
+
+</body>
+</html>

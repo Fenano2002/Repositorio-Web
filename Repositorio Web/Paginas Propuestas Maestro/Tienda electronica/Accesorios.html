@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios | Aura Sports</title>
+    <link rel="stylesheet" href="style-accesorios.css">
+    <link rel="shortcut icon" href="Logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">AURA SPORTS</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calzado.html">Calzado</a></li>
+                <li><a href="ropa.html">Ropa</a></li>
+                <li><a href="accesorios.html" class="active">Accesorios</a></li>
+            </ul>
+        </nav>
+        <div class="cart">🛒 (0)</div>
+    </header>
+
+    <main class="category-container">
+        <aside class="sidebar">
+            <h3>Filtros</h3>
+            
+            <div class="filter-group">
+                <h4>Tipo de Accesorio</h4>
+                <label><input type="checkbox"> Mochilas y Bolsas</label>
+                <label><input type="checkbox"> Gorras y Viseras</label>
+                <label><input type="checkbox"> Hidratación</label>
+                <label><input type="checkbox"> Equipo de Entrenamiento</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Género</h4>
+                <label><input type="radio" name="gender"> Unisex</label>
+                <label><input type="radio" name="gender"> Hombre</label>
+                <label><input type="radio" name="gender"> Mujer</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Precio</h4>
+                <input type="range" min="100" max="2500">
+                <p>Hasta $2,500</p>
+            </div>
+        </aside>
+
+        <section class="products-display">
+            <header class="display-header">
+                <h2>Accesorios Deportivos</h2>
+                <select name="sort">
+                    <option value="featured">Destacados</option>
+                    <option value="price-low">Precio: Menor a Mayor</option>
+                    <option value="price-high">Precio: Mayor a Menor</option>
+                </select>
+            </header>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Accesorios/mochila-training.html">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=600" alt="Mochila Training Pro">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Mochilas</span>
+                        <h3>Mochila Training Pro</h3>
+                        <p class="price">$1,299.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Accesorios/botella-termica-1l.html">
+                            <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=600" alt="Botella Térmica 1L">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Hidratación</span>
+                        <h3>Botella Térmica 1L</h3>
+                        <p class="price">$549.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Accesorios/gorra-running-ultralight.html">
+                            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=600" alt="Gorra Running Ultralight">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Gorras</span>
+                        <h3>Gorra Running Ultralight</h3>
+                        <p class="price">$399.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Accesorios/bandas-resistencia.html">
+                            <img src="https://i5.walmartimages.com/asr/a809d865-c8f2-48b7-83aa-7ecb2747bad8.63ad9489a93f66bd3159aca1cec08966.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Bandas de Resistencia">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Entrenamiento</span>
+                        <h3>Bandas de Resistencia (Set)</h3>
+                        <p class="price">$450.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Accesorios/cangurera-slim-fit.html">
+                            <img src="https://resources.sears.com.mx/medios-plazavip/t1/171712476479jpg?scale=500&qlty=75" alt="Cangurera Slim Fit">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Mochilas</span>
+                        <h3>Cangurera Slim Fit</h3>
+                        <p class="price">$350.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Accesorios/tapete-yoga.html">
+                            <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?q=80&w=600" alt="Tapete de Yoga">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Entrenamiento</span>
+                        <h3>Tapete de Yoga Antideslizante</h3>
+                        <p class="price">$899.00</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aura Sports. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

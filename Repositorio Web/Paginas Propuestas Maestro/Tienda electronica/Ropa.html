@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa | Aura Sports</title>
+    <link rel="stylesheet" href="style-ropa.css">
+    <link rel="shortcut icon" href="Logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">AURA SPORTS</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calzado.html">Calzado</a></li>
+                <li><a href="ropa.html" class="active">Ropa</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+            </ul>
+        </nav>
+        <div class="cart">🛒 (0)</div>
+    </header>
+
+    <main class="category-container">
+        <aside class="sidebar">
+            <h3>Filtros</h3>
+            
+            <div class="filter-group">
+                <h4>Tipo</h4>
+                <label><input type="checkbox"> Playeras</label>
+                <label><input type="checkbox"> Shorts</label>
+                <label><input type="checkbox"> Sudaderas</label>
+                <label><input type="checkbox"> Pantalones</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Talla</h4>
+                <div class="size-grid">
+                    <button>CH</button><button>M</button>
+                    <button>G</button><button>XG</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h4>Color</h4>
+                <div class="color-options">
+                    <div class="color-circle" style="background: #000;"></div>
+                    <div class="color-circle" style="background: #fff; border: 1px solid #ddd;"></div>
+                    <div class="color-circle" style="background: #555;"></div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="products-display">
+            <header class="display-header">
+                <h2>Ropa Deportiva</h2>
+                <select name="sort">
+                    <option value="new">Novedades</option>
+                    <option value="popular">Más populares</option>
+                </select>
+            </header>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Ropa/Playera Dry-Fit.html">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=600" alt="Playera Tech-Fit">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Entrenamiento</span>
+                        <h3>Playera Tech-Fit</h3>
+                        <p class="price">$649.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Ropa/shorts-compresion.html">
+                            <img src="https://cdn.shopify.com/s/files/1/0156/6146/files/images-ElementBaselayerShortNEWGSBlackA2C1W_BB2J_1320.jpg?v=1751974084" alt="Shorts de Compresión">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Running</span>
+                        <h3>Shorts de Compresión</h3>
+                        <p class="price">$529.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Ropa/hoodie-minimalist.html">
+                            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=600" alt="Hoodie Minimalist">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Lifestyle</span>
+                        <h3>Hoodie Minimalist</h3>
+                        <p class="price">$1,199.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <a href="Ropa/joggers-aura-soft.html">
+                            <img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?q=80&w=600" alt="Joggers Aura Soft">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="tag">Yoga</span>
+                        <h3>Joggers Aura Soft</h3>
+                        <p class="price">$899.00</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aura Sports. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
